@@ -20,22 +20,24 @@ function displayWeather() {
            $("#weather-display").append(img);
         $(".name").text(response.name);
         $(".date").text(new Date(response.dt*1000).toLocaleDateString())
-        queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat="+response.coord.lat+"&lon=" + response.coord.lon + "&appid=" + apikey + "&units=imperial"
+        queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?" + response.city + "&appid=" + apikey + "&units=imperial"
 
 // second call to get coord
+
         $.ajax({
             url: queryURL,
             method: "GET"
-        }).then(function(response){
-           console.log(response);
+        }).then(function(response1){
+           console.log(response1);
 
-            var iconurl = "http://openweathermap.org/img/w/" + response.weather.main.humudity.icon + ".png";
-            img.attr("src",iconur)
+            iconurl1 = "http://openweathermap.org/img/w/" + response1.main[0] + ".png";
+            img.attr("src",iconurl1)
             $("#weather-display").append(img);
-            $(".main").text(response.humudity);
+            $(".main").text(response1.main);
+          
             
-            queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?humudity="+ response.main.humudity + "&appid=" + apikey 
+            queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?"+ "feels like" + response1.main[0] + "&appid=" + apikey 
         })
    
     }
-    )};
+    )}
