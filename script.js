@@ -37,10 +37,12 @@ $(document).ready(function () {
             $(".date").text(new Date(response.dt * 1000).toLocaleDateString())
 
 
-        })
+       
             //queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?" + response.city + "&appid=" + apikey + "&units=imperial"
-            queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + "&lon="+ "&appid=" + apikey
-        
+            console.log(response.coord.lon,response.coord.lat)
+            //queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + "&lon="+ "&appid=" + apikey
+
+        queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + response.coord.lat+ "&lon="+ response.coord.lon + "&appid=" + apikey
                 $.ajax({
                     url: queryURL,
                     method: "GET"
@@ -52,11 +54,12 @@ $(document).ready(function () {
                     $("#weather-display").append(img);
                     $(".main").text(response.main);
                     $(".date").text(new Date(response.dt * 1000).toLocaleDateString())
+                    
                     //uvURL = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIkey + "&lat=" + response.coord.lat + "&lon=" + response.coord.lon;
         
                   //  queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?" + response.coord.name + "&appid=" + apikey
                 })
-        
+            })
 
     };
 
