@@ -111,7 +111,7 @@ main {
 
 /* Article column styling */
 .col-md-9 {
-
+   
     max-width: 900px;
     border-radius: 5px;
     padding: 0;
@@ -119,7 +119,13 @@ main {
     padding-left: 25px;
 
 }
-
+.weather-container {
+max-width: 900px;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 25px;
+}
 /* Styling for any full length columns */
 .col-md-12 {
 
@@ -177,7 +183,7 @@ h4 {
 
 /* Style for each 5 day forecast card */
 .card {
-
+  
     padding: 15px;
     width: 150px;
     margin-right: 25px;
@@ -219,6 +225,7 @@ h6 {
 
 /* Style for any Bootstrap row */
 .row {
+    
 font-size: large;
     margin: 0;
 
@@ -234,7 +241,7 @@ font-size: large;
     }
 
     .col-md-9 {
-
+        background-color: blue;
         border-radius: 0;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
