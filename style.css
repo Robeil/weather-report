@@ -1,69 +1,92 @@
 body {
 
-    background-color: rgb(42, 42, 42);
-    color: rgb(241, 241, 241);
+    background-color: rgb(194, 207, 209);
+
+    color: rgb(212, 76, 76);
 
 }
 
 header {
 
-    background-color: rgb(29, 29, 29);
+    font-family: 'Abril Fatface', cursive;
+
+    background-color: rgb(120, 145, 104);
+
     padding: 10px;
+
     text-align: center;
+
     margin-bottom: 25px;
+
     border-bottom: 2px solid #017989;
 
 }
 
-/* Header text styling */
+
+
 h1 {
 
     margin-bottom: 0;
 
 }
 
-/* Search form styling */
+
+
 .form-control {
 
     margin-right: 5px !important;
+
     width: 70% !important;
-    background-color: rgb(63, 63, 63);
+
+    background-color: rgb(87, 133, 78);
+
     border: 1px solid #0169DA;
 
 }
 
 .form-control:focus {
 
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(64, 73, 61);
+
     color: rgb(241, 241, 241);
+
     border: 1px solid rgb(241, 241, 241);
+
     box-shadow: none;
 
 }
 
-/* City button container styling */
+
+
 #button-container {
 
     margin-top: 10px;
+
     margin-bottom: 10px;
 
 }
 
-/* City buttons styling */
+
+
 .city-buttons {
 
     display: block;
+
     width: 100%;
+
     text-align: left;
+
     margin-bottom: 2px;
-    background-color: rgb(63, 63, 63);
-    color: rgb(241, 241, 241);
+
+    background-color: rgb(93, 158, 80);
+
+    color: rgb(123, 141, 100);
 
 }
 
 .city-buttons:focus {
 
-    box-shadow: none;
+    box-shadow: greenyellow;
 
 }
 
@@ -75,20 +98,24 @@ h1 {
 
 .city-buttons:active {
 
-    box-shadow: 0 0 2px 2px #0169DA; 
+    box-shadow: 0 0 2px 2px #7ed1e6; 
 
 }
 
-/* City button remove 'x' styling */
+
+
 .fa-times {
 
     float: right;
+
     position: relative;
+
     top: 3px;
 
 }
 
-/* 'Clear all city buttons' button container */
+
+
 #button-clear-container {
 
     margin-bottom: 20px;
@@ -101,137 +128,158 @@ main {
 
 }
 
-/* Aside column styling */
+
 .col-md-3 {
 
     padding-right: 2%;
+
     padding-left: 0;
 
 }
 
-/* Article column styling */
+
 .col-md-9 {
    
     max-width: 900px;
+
     border-radius: 5px;
+
     padding: 0;
+
     padding-top: 20px;
+
     padding-left: 25px;
 
 }
 .weather-container {
+
 max-width: 900px;
+
     border-radius: 5px;
+
     padding: 0;
+
     padding-top: 20px;
+
     padding-left: 25px;
 }
-/* Styling for any full length columns */
 .col-md-12 {
 
     padding: 0;
 
 }
-
-/* Styling for today city, date, icon container */
 #today-head-container {
 
     padding: 0;
+
     margin: -10px 0;
 
 }
-
-/* Styling for today weather data content */
 .today-content {
 
     padding: 0;
 
 }
 
-/* Styling for today weather city and date */
 #today-weather-city-date {
 
     display: inline;
 
 }
-
-/* Styling for today weather icon */
 #today-forecast-icon {
 
     display: inline;
+
     position: relative;
+
     top: -5px;
+
     min-width: 65px;
 
 }
 
-/* Styling for UV index color */
+
+
 .uv-color {
 
     display: inline;
+
     padding: 5px;
+
     border-radius: 5px;
    
 }
 
-/* Styling for 5 day forecast title */
+
+
 h4 {
 
     margin: 20px 0;
 
 }
 
-/* Style for each 5 day forecast card */
+
 .card {
   
     padding: 15px;
+
     width: 150px;
+
     margin-right: 25px;
+
     margin-bottom: 25px;
 
 }
 
-/* Style for each 5 day forecast card title */
+
 .card-title {
 
     margin: 0;
 
 }
 
-/* Style for date of 5 day forecast card */
+
 h6 {
 
     font-size: 125%;
+
     margin: 0px;
+
     text-align: center;
 
 }
 
-/* Style for weather icon of 5 day forecast card */
+
+
 .card-img {
 
     max-width: 50px;
+
     margin-left: auto;
+
     margin-right: auto;
 
 }
 
-/* Style for weather data of 5 day forecast card */
+
+
 .card-text {
 
     text-align: center;
 
 }
 
-/* Style for any Bootstrap row */
+
+
 .row {
     
 font-size: large;
+
     margin: 0;
 
 }
 
-/* Mobile responsive styling @ 576px */
+
 @media screen and (max-width: 576px) {
 
     .col-md-3 {
@@ -241,10 +289,13 @@ font-size: large;
     }
 
     .col-md-9 {
-        background-color: blue;
+       
         border-radius: 0;
+
         border-top-left-radius: 8px;
+
         border-top-right-radius: 8px;
+
         padding-top: 15px;
     
     }
@@ -263,7 +314,7 @@ font-size: large;
 
 }
 
-/* Mobile responsive styling @ 425px */
+
 @media screen and (max-width: 425px) {
 
     .col-md-9 {
@@ -286,13 +337,15 @@ font-size: large;
 
 }
 
-/* Mobile responsive styling @ 320px */
+
 @media screen and (max-width: 320px) {
 
     .col-md-9 {
 
         padding-left: 15px;
+
         padding-right: 15px;
+
         padding-top: 20px;
     
     }
